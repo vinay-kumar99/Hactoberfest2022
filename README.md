@@ -1,2 +1,2 @@
 # Hactoberfest2020
-Basic python programs
+Some Basic Program in Various Languages.
