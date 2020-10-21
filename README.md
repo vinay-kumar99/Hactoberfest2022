@@ -1,20 +1,24 @@
 # Hactoberfest2020
 Some Basic Program in Various Languages.
-# Add the remote, call it "upstream":
 
-git remote add upstream https://github.com/vinayskywalker/Hactoberfest2020
 
-# Fetch all the branches of that remote into remote-tracking branches,
-# such as upstream/main:
+Add the remote, call it "upstream":
 
-git fetch upstream
+``` git remote add upstream https://github.com/vinayskywalker/Hactoberfest2020  ```
 
-# Make sure that you're on your main branch:
+ Fetch all the branches of that remote into remote-tracking branches,
+ such as upstream/main:
 
-git checkout main
+``` git fetch upstream ```
 
-# Rewrite your main branch so that any commits of yours that
-# aren't already in upstream/main are replayed on top of that
-# other branch:
+Make sure that you're on your main branch:
 
-git rebase upstream/main
+``` git checkout main ```
+
+Rewrite your main branch so that any commits of yours that
+aren't already in upstream/main are replayed on top of that
+other branch:
+
+``` git rebase upstream/main ```
+
+
