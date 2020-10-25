@@ -1,4 +1,4 @@
-//Print prime numbers in a givane range
+//Print prime numbers in a given range in log(n-m) time
 
 
 
