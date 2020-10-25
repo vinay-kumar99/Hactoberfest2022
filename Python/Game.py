@@ -2,7 +2,7 @@
 
 import random
 choice=random.choice(range(21))
-print (choice)
+
 
 def print_pause(msg_to_print):
     print(msg_to_print)
