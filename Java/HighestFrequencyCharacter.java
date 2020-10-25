@@ -1,5 +1,4 @@
 /// Basic use of HashMap
-]
 import java.util.*;
 public class HighestFrequencyCharacter {
 

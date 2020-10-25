@@ -1,5 +1,5 @@
 import java.util.*;
-public class KlargestElements2 {
+public class KlargestElements {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
