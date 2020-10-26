@@ -73,9 +73,7 @@ class GuessingGame{
     public void regenerateComputerChoice(){
         randomNo = (random.nextInt(100) + 1); // Same as in the constructor
     }
-}
 
-public class Main {
     public static void main(String[] args) {
         System.out.println("*** Hello & Welcome to Guessing Game! *****");
         GuessingGame game = new GuessingGame();
