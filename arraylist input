@@ -1,0 +1,15 @@
+import  java.util.ArrayList;
+import java.util.Scanner;
+public class arraylistinput{
+public static void main(String[] args) {
+		 Scanner input = new Scanner(System.in);
+		 int n = input.nextInt();
+		 ArrayList<Integer> mylist = new ArrayList<Integer>();
+		 for(int i = 0;i<n;i++)
+		 {
+                 mylist.add(input.nextInt());
+		 }
+		}
+}
+
+	
