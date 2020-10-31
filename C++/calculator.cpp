@@ -29,6 +29,10 @@ int main()
         case '/':
             cout << num1/num2;
             break;
+           
+        case '%':
+            cout << num1%num2;
+            break;
 
         default:
             // If the operator is other than +, -, * or /, error message is shown
