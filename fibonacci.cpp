@@ -17,10 +17,9 @@ int main(){
     cout << "Enter the total number of terms:";
     cin >> n;
 
-    for(int i=1; i<=n; i++)
+    for(int i=1; i<n-1; i++, j++)
     {
             int r = Fib(j);
             cout << r << " ";
-            j++;
     }
 }
