@@ -1,15 +1,24 @@
+/*
+    Program to find the first n terms in fibonacci series.
+*/
+
 #include<iostream>
 using namespace std;
 
 int Fib(int n)
 {
-    if (n == 0 || n == 1)
+    int f[n + 2];
+
+    f[0] = 0;
+    f[1] = 1;
+    int i;
+ 
+    for(i = 2; i <= n; i++)
     {
-        return n;
+        f[i] = f[i - 1] + f[i - 2];
     }
-    else {
-        return Fib(n-1) + Fib(n-2);
-    }
+    
+    return f[n];
 }
 
 int main(){
@@ -17,9 +26,9 @@ int main(){
     cout << "Enter the total number of terms:";
     cin >> n;
 
-    for(int i=1; i<n-1; i++, j++)
+    for(int i=1; i<=n; i++, j++)
     {
-            int r = Fib(j);
-            cout << r << " ";
+        int r = Fib(j);
+        cout << r << " ";
     }
 }
