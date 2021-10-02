@@ -41,7 +41,7 @@ void words(int n, int c, int r)
 	     break;
   }
 }
-void main()
+int main()
 {
   clrscr();
   cout<<"Enter a number: ";
