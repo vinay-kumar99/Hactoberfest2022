@@ -1,54 +1,105 @@
-# Program make a simple calculator
+from tkinter import *
 
-# This function adds two numbers
-def add(x, y):
-    return x + y
+root=Tk()
 
-# This function subtracts two numbers
-def subtract(x, y):
-    return x - y
+root.geometry("400x500")
+scvalue=StringVar()
+scvalue.set("")
+screen=Entry(root,textvar=scvalue,font="Verdana 40")
+screen.pack(fill=X,padx=10,pady=10,ipadx=8)
 
-# This function multiplies two numbers
-def multiply(x, y):
-    return x * y
-
-# This function divides two numbers
-def divide(x, y):
-    return x / y
-
-
-print("Select operation.")
-print("1.Add")
-print("2.Subtract")
-print("3.Multiply")
-print("4.Divide")
-
-while True:
-    # take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
-
-    # check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-
-        if choice == '1':
-            print(num1, "+", num2, "=", add(num1, num2))
-
-        elif choice == '2':
-            print(num1, "-", num2, "=", subtract(num1, num2))
-
-        elif choice == '3':
-            print(num1, "*", num2, "=", multiply(num1, num2))
-
-        elif choice == '4':
-            print(num1, "/", num2, "=", divide(num1, num2))
-        
-        # check if user wants another calculation
-        # break the while loop if answer is no
-        next_calculation = input("Let's do next calculation? (yes/no): ")
-        if next_calculation == "no":
-          break
-    
+def click(event):
+    global scvalue
+    text=event.widget.cget("text")
+    if text=="C":
+        scvalue.set("")
+        screen.update()
+    elif text=="=":
+        if scvalue.get().isdigit():
+            value=int(scvalue.get())
+        else:
+            try:
+                value=eval(screen.get())
+            except Exception as e:
+                print(e)
+                value="----ERROR----"
+        scvalue.set(value)
+        screen.update()
     else:
-        print("Invalid Input")
+        scvalue.set(scvalue.get()+text)
+        screen.update()
+
+f=Frame(root)
+b=Button(f,text="C",padx=47,pady=0,fg="red",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="%",padx=10,pady=0,fg="red",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="/",padx=10,pady=0,fg="red",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+f.pack()
+
+f=Frame(root)
+b=Button(f,text="7",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="8",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="9",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="*",padx=10,pady=0,fg="red",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+f.pack()
+
+f=Frame(root)
+b=Button(f,text="4",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="5",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="6",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="-",padx=10,pady=0,fg="red",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+f.pack()
+
+f=Frame(root)
+b=Button(f,text="1",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="2",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="3",padx=10,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="+",padx=6,pady=0,fg="red",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+f.pack()
+
+f=Frame(root)
+b=Button(f,text="00",padx=0,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=5,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="0",padx=8,pady=0,font="arial 25 bold")
+b.pack(side=LEFT,padx=12,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text=".",padx=10,pady=0,fg="red",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+b=Button(f,text="=",padx=10,pady=0,fg="red",bg="orange",font="arial 25 bold")
+b.pack(side=LEFT,padx=10,pady=5)
+b.bind("<Button-1>",click)
+f.pack()
+
+
+root.mainloop()
