@@ -5,7 +5,7 @@
 #include<iostream>
 using namespace std;
 
-int Fib(int n)
+int fib(int n)
 {
     int f[n + 2];
 
@@ -28,7 +28,7 @@ int main(){
 
     for(int i=1; i<=n; i++, j++)
     {
-        int r = Fib(j);
+        int r = fib(j);
         cout << r << " ";
     }
 }
