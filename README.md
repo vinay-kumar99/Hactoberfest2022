@@ -6,7 +6,7 @@ Some Basic Program in Various Languages.
 
 Add the remote, call it "upstream" :
 
-``` git remote add upstream https://github.com/vinayskywalker/Hactoberfest2020  ```
+``` git remote add upstream https://github.com/vinayskywalker/Hactoberfest2021  ```
 
  Fetch all the branches of that remote into remote-tracking branches,
  such as upstream/main:
