@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+void reverse(int* arr,int n,int low,int high)
+{
+    while(high>low)
+    {
+        int temp=arr[low];
+        arr[low]=arr[high];
+        arr[high]=temp;
+        high--;
+        low++;
+    }
+    
+}
+
+void rotate(int* arr, int n, int k){
+   k=k%n;
+   if(k<0)
+   {
+       k=n+k;
+   }
+   
+    reverse(arr,n,0,n-1);
+     reverse(arr,n,0,k-1);
+     reverse(arr,n,k,n-1);
+      
+      
+}
+
+void display(int* arr, int n){
+    for(int i = 0 ; i < n; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main(){
+    int n, r;
+    cin>>n;
+    int* arr = new int[n];
+    for(int i = 0 ; i < n; i++){
+        cin>>arr[i];
+    }
+    cin>>r;
+    
+    rotate(arr,n,r);
+    display(arr,n);
+}
