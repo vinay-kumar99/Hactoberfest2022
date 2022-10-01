@@ -4,31 +4,22 @@
 //Input : 5 3 // Output : 4
 //Input : 3 2 // Output : 2
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
+int joseph(int n,int k){
+    if(n==1){
+        return 0;
+    }
 
-int jos(int n, int k)
-{
-   if(n==1)
-   return 0;
-   else
-   return (jos(n-1,k)+k)%n;
- }
-int josephus(int n,int k)
-{
-    int ans=jos(n,k);
-    return ans+1;
+    int x=joseph(n-1,k);
+    int y=(x+k)%n;
+    return y;
 }
 
-int main()
-{
-	int n,k;
-	cin>>n>>k;
-		
-		//calling josephus() function
-		cout<<josephus(n,k)<<endl;
-	
-	return 0;
+int main(){
+    int n;int k;
+    cin>>n>>k;
+    cout<<joseph(n,k);
+    return 0;
 }
-
