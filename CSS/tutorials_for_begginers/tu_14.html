@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .container{
+            width:60%;
+            height:500px ;
+            border: 5px solid darkorange;
+            /* initialize the container as flex box */
+            display: flex;
+            /* felx properties for flex container */
+            /*flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row; 
+            the default flex-direction is row 
+            flex-direction: row-reverse;*/
+            flex-wrap: wrap;
+            /* default value of flex wrap is nowrap */
+            /* flex-wrap: wrap-reverse; */
+            background-color: rgb(199, 177, 177);
+            border-radius: 20px;
+            /* flex-flow: row-reverse wrap;
+            flex-flow is used to set flex-direction and flex-wrap at a time*/
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            /* justify content is used to justify the contents in horizantal direction */
+            align-items: center;
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+            /* for align-items default value is flex-start */}
+        #item1{
+            /* flex properties for flex items */
+            /* order: 2; */
+            /* the element with highest order is shown at last */
+            /* flex-grow: 3; */
+            /* flex-shrink: 2; */
+            }
+        #item2{
+             /* flex-grow: 2; */
+             flex-basis: 200px;
+             /* when flex-basis is appied when flex-direction is row it will control width */
+             /* when flex-basis is appied when flex-direction is coloumn it will control height */
+
+            }
+        #item3{
+              flex: 3 2 300px;
+                /*if we use only flex we can define flex-grow flex-shrink and flex-basis */
+              align-self: flex-start;
+              align-self: flex-end;
+              align-self: center;
+            }
+    
+        .item{
+            background-color: aqua;
+            border: 2px solid black;
+            margin:4px;
+            padding: 5px;
+            width:100px;
+            height: 100px;
+            text-align: center;
+            border-radius: 15px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h3>in this we are going to know about flexbox</h3>
+    <div class="container">
+    <div class="item" id="item1">apple</div>
+    <div class="item" id="item2">watermelon</div>
+    <div class="item" id="item3">banana</div>
+    <div class="item" id="item4">orange</div>
+    <div class="item" id="item5">grapes</div>
+    <div class="item" id="item6">promogranate</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+       .container{
+           width: 900px;
+           border: 4px solid rgb(106, 47, 245);
+           margin:33px auto;
+           background-color: rgb(30, 245, 181);
+       }
+       .item{
+           border: 4px solid rgb(102, 255, 0);
+           margin: 12px 3px;
+           padding: 12px 3px;
+           background-color: rgb(228, 128, 186);
+       }
+       #fruits{
+           float: left; 
+           width: 48%; 
+       }
+       #vegitables{
+           /* float: right; */
+           float: left;
+           width: 48%;
+       }
+       #stationary{
+           /* float: left; */
+           /* clear: left; */
+           clear: both;
+           width: 100%;
+       }
+       p, h3{
+           /* text-align: right; */
+           /* text-align: left; */
+           /* text-align: center; */
+           text-align: justify;
+       }
+       h3{
+           margin:auto;
+           width:500px
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>welcome to my grocery store</h3>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maxime eos quasi quae natus illum corrupti aperiam cupiditate omnis molestiae. Hic quod ratione laborum doloremque nisi quasi, cupiditate quam excepturi Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea pariatur praesentium suscipit ducimus aliquid dignissimos reprehenderit tenetur architecto. Voluptatum nemo quisquam voluptate rerum quaerat molestias earum dignissimos recusandae placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur alias sunt blanditiis ullam repellendus consequatur explicabo praesentium magni adipisci sequi ex fugit quae deserunt, et quam velit dolores rem eligendi! </p>
+        </div>
+        <div id="vegitables" class="item">
+            <h3>vegitables</h3>
+            <p id="vegetablepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos id et, eaque corporis saepe quod, natus mollitia quibusdam magnam odio repellat est aut rem. Commodi quis obcaecati distinctio. Dolorum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores repudiandae, facilis est labore quod iusto officia a nesciunt aliquam impedit reprehenderit eius obcaecati voluptatum maiores ducimus! Dolorem eos dolorum sunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus consequatur officia architecto. Dicta dolorum accusamus velit quaerat dolorem molestias vero, voluptates excepturi illo, tempore enim, optio ratione voluptas quis placeat culpa sapiente numquam nesciunt fugit eius minima. Aspernatur, asperiores fuga? </p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias harum architecto nisi quis, nihil blanditiis maiores delectus similique, deserunt fugit quos nam impedit distinctio ab? Labore impedit aliquam culpa ex.</p>
+        </div>
+        <div glass id="glasses" class="item">
+            <h3>glasses</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, consectetur recusandae obcaecati, alias laborum fuga, dolores nihil animi eos eligendi nam pariatur! Dolor voluptate est praesentium optio deleniti, aspernatur quod?</p>
+
+        </div>
+    </div>
+</body>
+</html>

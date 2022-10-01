@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid-6 plus media quries</title>
+    <style>
+        .container{
+            display:grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar' 
+            'section section section aside'
+            'footer footer footer footer';
+        }
+    @media only screen and (max-width:300px){
+        body{
+            background-color: red;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar' 
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+       }
+       aside{
+           display: none;
+       }        
+
+    }
+    @media only screen and (min-width:300px) and (max-width:500px){
+        body{
+            background-color: blue;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar' 
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+        aside{
+        display: none;
+        }
+
+    }
+    @media only screen and (min-width:500px) and (max-width:800px){
+        body{
+            background-color: yellow;
+        }
+        .container{
+            grid-template-areas: 
+            'navbar navbar navbar navbar' 
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+
+        }
+    }
+    @media only screen and (min-width:800px){
+        body{
+            background-color: green;
+            
+        }
+    }
+    .bdr{
+        border: 2px solid black;
+        background-color: bisque;
+        padding: 30px 30px;
+    } 
+    nav{
+           grid-area: navbar;
+        }
+    section{
+           grid-area: section;
+        }
+    aside{
+           grid-area: aside;
+        }
+    footer{
+            grid-area: footer;
+            text-align: center;
+        } 
+    span{
+        padding: 10px 10px;
+    } 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>home</span>
+            <span>about us</span>
+            <span>services</span>
+            <span>contact us</span>
+        </nav>
+        <section class="bdr">
+            <h2>mary has a little lamp little lamp</h2>
+        </section>
+        <aside class="bdr">
+            <h1>MORE ABOUT US</h1>
+        </aside>
+        <footer class="bdr">
+            email:abc@gmail.com
+        </footer>
+    </div>
+</body>
+</html>

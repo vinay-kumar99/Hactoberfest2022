@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+      .container{
+          display: grid;
+          /* grid-template-columns: 300px 100px 100px; */
+          /* grid-template-columns: 300px 100px auto; */
+          /* grid-template-columns: 300px auto 100px; */
+          /* grid-template-columns: 1fr 3fr 1fr; */
+           grid-template-columns: repeat(5,auto);
+            /*here 5 inside repeat represents no of columns inside a row as we used grid-template-columns  */
+           grid-gap: 2rem;
+      }
+      .item{
+          width: 100px; 
+          /* height: 100px; */
+          margin: 10px;
+          border: 2px solid blue;
+          background-color: yellow;
+          text-align: center;
+          
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+    </div>
+</body>
+</html>

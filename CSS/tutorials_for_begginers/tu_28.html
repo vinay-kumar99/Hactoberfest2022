@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid4</title>
+    <style>
+     .container{
+         display: grid;
+         grid-gap: 1rem;
+         /* grid-template-columns: 1fr 1fr 1fr; */
+         /* grid-template-columns: 120px 120px 120px; */
+         /* justify-content: center; */
+         /* align-items: center; */
+         grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+     }
+     .item{
+         border: 2px solid yellow;
+         background-color: rgb(127, 127, 248);
+         padding: 34px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+        <div class="item">this is item-11</div>
+        <div class="item">this is item-12</div>
+    </div>
+</body>
+</html>

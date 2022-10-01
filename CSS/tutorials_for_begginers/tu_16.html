@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .box{
+            background-color: antiquewhite;
+            color: blueviolet;
+            border: 2px solid black;
+            border-radius: 20px;
+            width:50%;
+            margin:4px;
+            text-align: center;
+            font-size: 30px;
+            display: none;
+        }
+        @media only screen and (max-width:500px){
+            #box1{
+                display: block;
+                background-color: aqua;
+            }
+        }
+         @media (min-width:500px) and (max-width:800px){
+            #box2{
+                display: block;
+                background-color: yellow;
+            }
+        }
+        @media only screen and (min-width:800px){
+            #box3{
+                display: block;
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">it is raining</div>
+    <div class="box" id="box2">it is cloudy</div>
+    <div class="box" id="box3">it is sunny</div>
+    <div class="box" id="box4">it is humid</div>
+</body>
+</html>

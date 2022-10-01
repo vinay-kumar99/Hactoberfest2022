@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            background-color: aqua;
+            border:2px solid darkmagenta;
+            margin:0px 20px;
+            padding: 10px 20px;
+            text-align: center;
+            /* box-shadow: 10px 10px tomato;  here box shadow for bottom and right is applied*/
+            /* box-shadow: -10px -10px tomato; negative values are used to give box shadow at top */
+            /* box-shadow: 10px 10px 10px tomato; */
+            /* here the third value 10px is corresponding to blur radius tis can also be made negative value to apply at to and left*/
+             /* box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.5); */
+             /* here a in rgba represents alpha and alpha is responsible for how dark the color sh0uld be */
+            /*here the 10px represents spread-radius  */
+            /* box-shadow:inset 10px 10px tomato; */
+            /* inset is used to get box-shadow from inside */
+            box-shadow:inset 10px 10px tomato, 10px 10px 10px 10px rgba(171, 18, 222, 0.5) ;
+            /* when you want to give more than one type of border we can use them by placing a comma in between */
+            text-shadow: 10px 10px 3px white;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, obcaecati?</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, fugit?</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, dolorem.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
