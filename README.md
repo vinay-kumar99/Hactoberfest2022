@@ -31,4 +31,8 @@ other branch:
 git rebase upstream/main
 ```
 
+### Project Contributors
+<a href="https://github.com/vinayskywalker/Hactoberfest2022/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=vinayskywalker/Hactoberfest2022" />
+</a>
 
