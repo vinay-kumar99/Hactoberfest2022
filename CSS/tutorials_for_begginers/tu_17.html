@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> more on selectors</title>
+    <style>
+      h3{
+          background-color: red;
+          color: white;
+          font-weight: bold;
+          border-radius: 15px;
+      }
+      /* if p is contained by any li which is contained by div */
+      div li p{
+          color:teal;
+          font-weight: bold;
+          background-color: antiquewhite;
+      }
+      /* if p is wright inside div then this css will be applied */
+      div > p{
+          color: rgb(46, 158, 158);
+          background-color: yellow;
+          font-size: 25px;
+      }
+      /* if p is wright after div then this css property is applied */
+      div + p{
+          color:white;
+          background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>more on css selctors</h3>
+    <div class="container">
+        <ul>
+            <li><p>this is another paragraph inside a list</p></li>
+        </ul>
+        <div class="row">
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph </p>
+    </div>
+    <p> this is outer most paragraph </p>
+</body>
+</html>

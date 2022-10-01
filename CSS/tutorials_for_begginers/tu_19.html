@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selectors</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Babylonica&family=Grape+Nuts&display=swap">
+    <style>
+    body{
+        color: rgb(253, 63, 165);
+        }
+    .navigation{
+        display: flex;
+        list-style: none;
+        font-size: 15px;
+    }
+    li{
+        padding: 0px 30px;
+    }
+    section{
+        height: 700px;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    section::before{
+        content: "this is written in section::before";
+    }
+    section::after{
+        font-family: cursive;
+        content: "this is written in section::after";
+    }
+    p{
+        font-family: 'Babylonica', cursive;
+        text-align: center;
+    }
+    header::before{
+        background: url('https://images.unsplash.com/photo-1604085572504-a392ddf0d86a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80') no-repeat center center/cover;
+        content:"";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height:100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <ul class="navigation">
+            <li>home</li>
+            <li>about us</li>
+            <li>contact us</li>
+            <li>services</li>    
+         </ul>
+    </nav>
+    </header>
+    <section>
+        <h1>this is a heading</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quae commodi eum odio delectus animi culpa numquam distinctio, optio itaque at error natus temporibus. Nam vel ipsum sequi facere sit?
+        </p>
+    </section>
+    
+</body>
+</html>

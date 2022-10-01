@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+      html{
+          font-size: 9px;
+      }
+     .container{
+        font-size: 6px;
+        border: 4px solid rebeccapurple;
+        /* height:300px; */
+        /* 100vh is used to get 100% height of view port */
+        height: 100vh;
+        width:100vw;
+        /* width:300px */
+        /* 100vw is used to get 100% width of view port*/
+     }
+     h1{
+         text-align: center;
+         
+     }
+     #first{
+         font-size: 2em; 
+        /* padding: 3em; */
+        /* here padding is done relative to font-size i.e 9px*2em*3 as we used em */
+
+     }
+     #second{
+         font-size: 7rem; 
+         /* padding: 4rem;  */
+        /* here padding is done relative to parent element i.e 9px*4 as we used rem */
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">twinkle twinkle little star</h1>
+        <h1 id="second">marry has a little lamp</h1>
+        <h1 id="third">teddy bear teddy bear turn around turn around</h1>
+    </div>
+</body>
+</html>

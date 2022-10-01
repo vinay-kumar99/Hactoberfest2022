@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            /* universal selector */
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(219, 180, 210);
+        }
+        .container{
+            background-color: #ee8888;
+            border: 3px solid rgb(122, 214, 171);
+            padding: 6px;
+            margin: 34px;
+            /*we can set left, right, top, bottom padding and margin like this
+             padding-top:6px; 
+            padding-bottom:6px;
+            padding-left:6px;
+            padding-right:6px;
+            margin-top: 34px;
+            margin-bottom: 34px;
+            margin-left: 34px;
+            margin-right: 34px;*/
+            /*padding : 23px 34px 32px 43px ; padding/margin : top right bottom left */
+            /* margin: 23px 41px; i.e padding/margin: y(top/bottom) x(left/right); */
+            border-radius: 20px;
+            width:400px;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h3>one two three go</h3>
+      <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia modi autem quam minus mollitia, possimus commodi maiores optio, ea est atque sit tempora!</p>
+    </div>
+    <div class="container">
+        <h3>one two three go</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia modi autem quam minus mollitia, possimus commodi maiores optio, ea est atque sit tempora!</p>
+      </div>
+      <div class="container">
+        <h3>one two three go</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia modi autem quam minus mollitia, possimus commodi maiores optio, ea est atque sit tempora!</p>
+      </div>
+      
+</body>
+</html>

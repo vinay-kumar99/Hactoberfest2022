@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 250px;
+            margin: auto;
+        }
+       input{
+           display: block;
+       }
+       input[type='text']{
+           border: 2px solid darkorange;
+           background-color: chartreuse;
+           padding: 23px;
+       }
+       a[target]{
+           font-size: 30px;
+           color: pink;
+       }
+       a[target='_self']{
+           color: aqua;
+       }
+       input[type='email']{
+           border: 4px solid fuchsia;
+           border-radius: 10px;
+       }
+       /* this will apply the css on third child of li */
+       li:nth-child(3){
+           background-color: rgb(67, 14, 214);
+           color: white;
+           border: 3px solid mediumspringgreen;
+           border-radius: 10px;
+       }
+       li:nth-child(2n+0){
+           color: indigo;
+           list-style: none;
+       }
+      
+       li:nth-child(odd){
+           color: rgb(77, 14, 14);
+           list-style: disc;
+       }
+       li:nth-child(even){
+           color: rgb(111, 121, 112);
+           list-style: circle;
+       }
+       li:nth-child(3n+3){
+           color: rgb(86, 211, 97);
+           list-style: square;
+       }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">go to facebook</a></h1>
+        <form action="" class=="formgroup">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="email" placeholder="enter your email">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+        <li class="item" id="item1">item1</li>
+        <li class="item" id="item2">item2</li>
+        <li class="item" id="item3">item3</li>
+        <li class="item" id="item4">item4</li>
+        <li class="item" id="item6">item6</li>
+        <li class="item" id="item7">item7</li>
+        <li class="item" id="item8">item8</li>
+        <li class="item" id="item9">item9</li>
+        <li class="item" id="item10">item10</li>
+        </ul>
+    </div>
+</body>
+</html>

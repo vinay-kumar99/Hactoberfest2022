@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors and mode designing</title>
+    <style>
+          .container{
+              border: 2px solid rgb(155, 50, 67);
+              background-color: rgb(245, 245, 131);
+              width: 880px;
+              padding: 20px;
+              margin: 30px auto;
+
+          }
+          a{
+              text-decoration: none;
+          }
+          a:hover{
+              background-color: aliceblue;
+          }
+          a:visited{
+              background-color: palevioletred;
+          }
+          a:active{
+              color: white;
+          }
+          /* all this a:hover a:visited a:active are known as pseudo selectors same we cab do with button */
+          .btn{
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              font-weight: bold;
+              background-color: palegreen;
+              color: blueviolet;
+              padding: 6px;
+              border: none;
+              cursor: pointer;
+              font-size: 20px;
+              border-radius: 20px;
+          }
+          .btn:hover{
+              border: 2px solid black;
+          }
+    </style>
+</head>
+<body>
+    <div class="container" id="first">
+        <h3>webpage</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, perspiciatis voluptatum cupiditate labore dolorum, officia at dignissimos hic voluptate magni corrupti minima! Culpa quo nemo at sapiente animi odio perspiciatis?</p>
+        <a href="https://google.com" class="btn">Read more</a>
+        <button class="btn">contact us for more details</button>
+    </div>
+</body>
+</html>

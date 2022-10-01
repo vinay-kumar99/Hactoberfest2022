@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid3</title>
+    <style>
+  .container{
+      display:grid;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: repeat(4,1fr);
+      /* grid-column-gap: 7rem; */
+      /* grid-row-gap: 1rem; */
+      grid-gap: 1rem;
+  }
+  .box{
+      background-color: rgb(252, 167, 175);
+      border: 4px solid rgb(255, 255, 101);
+      padding: 30px;
+  }
+  .box:first-child{
+      /* grid-column-start: 1; */
+      /* grid-column-end: 3; */
+      /* shothand for this can be written as */
+      grid-column: 1/span 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is box-1</div>
+        <div class="box">this is box-2</div>
+        <div class="box">this is box-3</div>
+        <div class="box">this is box-4</div>
+        <div class="box">this is box-5</div>
+        <div class="box">this is box-6</div>
+        <div class="box">this is box-7</div>
+        <div class="box">this is box-8</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-10</div>
+        <div class="box">this is box-11</div>
+        <div class="box">this is box-12</div>
+        <div class="box">this is box-13</div>
+        <div class="box">this is box-14</div>
+        <div class="box">this is box-15</div>
+        <div class="box">this is box-16</div>
+        <div class="box">this is box-17</div>
+        <div class="box">this is box-18</div>
+        <div class="box">this is box-19</div>       
+        <div class="box">this is box-20</div>
+    </div>
+</body>
+</html>
