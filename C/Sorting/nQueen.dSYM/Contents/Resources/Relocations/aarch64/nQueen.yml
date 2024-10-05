@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/siddharthjoshi/Hactoberfest2022/C/Sorting/nQueen'
+relocations:
+  - { offset: 0x26, size: 0x8, addend: 0x0, symName: _printSolution, symObjAddr: 0x0, symBinAddr: 0x1000038D8, symSize: 0xD0 }
+  - { offset: 0x41, size: 0x8, addend: 0x0, symName: _printSolution, symObjAddr: 0x0, symBinAddr: 0x1000038D8, symSize: 0xD0 }
+  - { offset: 0xAB, size: 0x8, addend: 0x0, symName: _isSafe, symObjAddr: 0xD0, symBinAddr: 0x1000039A8, symSize: 0x218 }
+  - { offset: 0x16D, size: 0x8, addend: 0x0, symName: _solveNQueensUtil, symObjAddr: 0x2E8, symBinAddr: 0x100003BC0, symSize: 0x138 }
+  - { offset: 0x1CD, size: 0x8, addend: 0x0, symName: _solveNQueens, symObjAddr: 0x420, symBinAddr: 0x100003CF8, symSize: 0x1D4 }
+  - { offset: 0x254, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x5F4, symBinAddr: 0x100003ECC, symSize: 0x54 }
+...
